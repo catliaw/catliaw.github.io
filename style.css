@@ -1,76 +1,67 @@
 body{
-	background-color:#f0f0f0;
+  background-color: #E8EAF6; /* Indigo 50 */
 }
 
-p{
-	text-align: left;
-	font-family:Arial, sans-serif;
-	font-size:80%;
+p {
+  text-align: left;
+  font-family:Arial, sans-serif;
+  font-size: 85%;
 }
 
-.topBar{
-	width:100%;
+/* NAV BAR STYLES */
+
+.navbar-custom {
+  background-color: #3F51B5; /* Indigo 500 */
 }
 
-
-.header {
-	width:25%;
-	height:20%;
-	display:block;
-	font-family:Arial, sans-serif;
-
+.navbar-default {
+  border-color: #C5CAE9;
 }
 
-.navigation{
-	width:75%;
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus{
+  color: #E8EAF6;
 }
 
-.sideBarLeft{
-	width:25%;
-	/*display:inline-block;*/
-	display:block;
-	vertical-align: top;
-	float:left;
+.navbar-default .navbar-brand:hover {
+  color: #C5CAE9;
 }
 
-.mainBody{
-	width:50%;
-	display:inline-block;
-	vertical-align: top;
+.navbar-default .navbar-nav>li>a {
+  color: #E8EAF6;
 }
 
-.sideBarRight{
-	width:25%;
-	/*display:inline-block;*/
-	/*vertical-align: top;*/
-	float:right;
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #C5CAE9; /* Indigo 100 */
 }
 
-h1{
-	color:NavyBlue;
-	font-family:Arial, sans-serif;
+.navbar-default .navbar-toggle {
+  border-color: #C5CAE9;
 }
 
-h3{
-	font-family:Arial, sans-serif;
+.navbar-default .navbar-toggle:focus {
+  background-color: #3F51B5;
 }
 
-li{
-	font-family:Arial, sans-serif;
-	font-size: 100%;
+.navbar-default .navbar-toggle:hover {
+  background-color: #5C6BC0; /* Indigo 400 */
 }
 
-.mainBody > p{
-	font-family:Arial, sans-serif;
-	text-align: left;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #E8EAF6;
 }
 
-.normal {
-	width: 80%;
-	height: 80%;
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #C5CAE9;
 }
 
-.large {
-	width: 300px;
-	height: 300px;
+/* END NAV BAR STYLES */
+
+.glyphicon {
+  font-size: 20px;
 }
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+}
+

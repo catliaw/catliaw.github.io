@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cat Liaw</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    
-	<script type="text/javascript" src="profile.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat Liaw</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-	<div class="topBar">
-		<div class="header">
-			<h1 id="header">Cat Liaw</h1>
-		</div>
-		<div class="navigation">
-		Menu
-		</div>
-	</div>
 
-	<div class="sideBarLeft">
-		<img id="profilePic" class="normal" src="images/cat_pp1.jpg">
-		<h3>Social Media:</h3>
-		<ul>
-			<li><a href="https://www.facebook.com/catliaw">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/catliaw">LinkedIn</a></li>
-		</ul>
-		<input type="button" id="random-button" onclick="sayMyName()" value="Random fact about me"/>
-	</div>
+  <!-- Static navbar -->
 
-	<div class="mainBody">
-		<p>Cat is a student at Hackbright's part-time Front-End Development course.</p>
-		<p>She likes to watch YouTube videos and to listen to music.</p>
-		<p id="randomFact">Random facts about me!!</p>
-		<p>Cat is a student at Hackbright's part-time Front-End Development course.</p>
-		<p>She likes to watch YouTube videos and to listen to music.</p>
-		<p id="randomFact">Random facts about me!!</p>
-		<p>Cat is a student at Hackbright's part-time Front-End Development course.</p>
-		<p>She likes to watch YouTube videos and to listen to music.</p>
-		<p id="randomFact">Random facts about me!!</p>
-		<p>Cat is a student at Hackbright's part-time Front-End Development course.</p>
-		<p>She likes to watch YouTube videos and to listen to music.</p>
-		<p id="randomFact">Random facts about me!!</p>
-		<p>Cat is a student at Hackbright's part-time Front-End Development course.</p>
-		<p>She likes to watch YouTube videos and to listen to music.</p>
-		<p id="randomFact">Random facts about me!!</p>
-		<section>
-			<form action="http://formspree.io/cat.liaw@gmail.com" method="POST">
-				<label><input type="text" name="name"></label>
-				<label><input type="email" name="replyto"></label>
-				<label><input type="submit" value="Send"></label>
-			</form>
-			<button id="numberAJAX">Get trivia</button>
-			<p id="numberTrivia"></p>
-			<button id="showTimeButton">Show Server Time</button>
-			<p id="serverTime"></p>
-		</section>	
-	</div>
+  <nav class="navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header navbar-custom">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand navbar-custom" href="index.html">
+          <span class="glyphicon glyphicon-eur" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-text-width" aria-hidden="true"></span>
+          <span class="sr-only">(current)</span></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#">About</a></li> -->
+          <li><a href="#">Experience</a></li>
+          <li><a href="https://github.com/catliaw">GitHub</a></li>
+          <li><a href="https://codepen.io/catliaw/">CodePen</a></li>
+          <li><a href="https://www.linkedin.com/in/catliaw">LinkedIn</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  
+  <!-- End of navbar -->
 
-	<div class="sideBarRight">
-		
-			
-	</div>
-	
+  <!-- Body of Page -->
+
+  <!-- It's container-fluid so it spans the whole page. -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-2 col-xs-3 col-xs-offset-1">
+        <img id="profilePic" class="profile-img" src="images/cat_pp1.jpg">
+      </div>
+
+      <div class="col-sm-6 col-xs-7">
+        <p>Cat is a current Software Engineering Fellow at the Hackbright Academy. Having worked as an email developer for three years, front-end web development seems like the logical next career step, but she is enthusiastic to explore back-end and potentially become a full-stack engineer.</p>
+
+        <p>Cat is currently learning to use Bootstrap and updating her HTML and CSS skills to match that of the current decade&mdash;email developing HTML is notoriously old styled. Please bear with this website's basic appeal while she increases her knowledge and skills of front-end web development!</p>
+        
+        <p>In her free time, Cat enjoys music, fitness and&mdash;of course&mdash;food adventures! In the last year, Cat has also discovered the world of YouTube. Cat admires and is especially inspired by YouTube content creators Casey Neistat, Est&#233;e Lalonde and Ingrid Nilsen.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- You need this in order to use JS-based components.
+  Leave this at the bottom and code above it. -->
+  <script type="text/javascript" src="profile.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
 </body>
 </html>
